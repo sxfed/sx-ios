@@ -1,0 +1,31 @@
+# Uncomment this line to define a global platform for your project
+
+target 'sxbapp' do
+    
+pod 'React', :path => './ReactComponent/node_modules/react-native', :subspecs => [
+'Core',
+'ART',
+'DevSupport',
+'RCTActionSheet',
+'RCTAdSupport',
+'RCTGeolocation',
+'RCTImage',
+'RCTNetwork',
+'RCTPushNotification',
+'RCTSettings',
+'RCTText',
+'RCTVibration',
+'RCTWebSocket',
+'RCTLinkingIOS',
+]
+pod 'Yoga', :path => './ReactComponent/node_modules/react-native/ReactCommon/yoga'
+pod 'AFNetworking', '~> 3.1.0'
+pod 'IQKeyboardManager', '~> 4.0.4'
+pod 'MJExtension', '~> 3.0.11'
+pod 'MBProgressHUD', '~> 0.9.2'
+pod 'SDWebImage', '~> 3.8.1'
+pod 'SDCycleScrollView', '~> 1.65'
+
+platform :ios, '9.0'
+
+end
